@@ -123,3 +123,13 @@ label {
     margin-top: 20px;
     height: 20px;
 }
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #960607;
+    font-weight: lighter;
+    text-decoration: none;
+}
