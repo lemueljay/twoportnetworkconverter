@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <title></title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div id="title" class="row animated infinite bounce ">
+            <div class="col-xs-12">TWOPORT</div>
+            <div class="col-xs-12"><span><strong>NETWORK</strong></span>CONVERTER</div>
+        </div>
+    </div>
+</nav>
+
+<div id="holder" class="container">
+    <div class="row">
+        <div id="optioner" class="col-xs-12">
+            <span id="reset" class="option">RESET</span>
+            <span class="option">ABOUT</span>
+            <span class="option">HELP</span>
+        </div>
+        <div id="card" class="col-xs-12">
+            <div class="row">
+                <div id="cardleft" class="col-sm-8 col-xs-12">
+                    <div class="form-group form-inline">
+                        <label>FROM: </label>
+                        <select name="fromparameter" class="form-control">
+                            <option value="1">Impedance [z]</option>
+                            <option value="2">Admittance [y]</option>
+                            <option value="3">Hybrid [h]</option>
+                            <option value="4">Inverse Hybrid [g]</option>
+                            <option value="5">Transmission [T]</option>
+                            <option value="6">Inverse Transmission [t]</option>
+                        </select>
+                    </div>
+                    <div class="spanner">
+                         <div class="col-xs-2">
+                             <span class="pos">POSITION</span>
+                         </div>
+                        <div class="col-xs-4 text-center">
+                            <span class="real">real</span>
+                        </div>
+                         <div class="col-xs-2">
+
+                         </div>
+                        <div class="col-xs-4 text-center">
+                            <span class="imaginary">imaginary</span>
+                        </div>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-2">
+                            <span class="changeparam">z</span><span class="sub">11</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <input id="r11" class="form-control">
+                        </div>
+                         <div class="col-xs-2 text-right">
+                             <span class="plusj">+ j</span>
+                         </div>
+                        <div class="col-xs-4">
+                            <input id="i11" class="form-control">
+                        </div>
+                    </div>
+                    <div class="spanner">
+                       <div class="col-xs-2">
+                           <span class="changeparam">z</span><span class="sub">12</span>
+                       </div>
+                        <div class="col-xs-4">
+                            <input id="r12" class="form-control">
+                        </div>
+                         <div class="col-xs-2 text-right">
+                             <span class="plusj">+ j</span>
+                         </div>
+                        <div class="col-xs-4">
+                            <input id="i12" class="form-control">
+                        </div>
+                    </div>
+                    <div class="spanner">
+                       <div class="col-xs-2">
+                           <span class="changeparam">z</span><span class="sub">21</span>
+                       </div>
+                        <div class="col-xs-4">
+                            <input id="r21" class="form-control">
+                        </div>
+                         <div class="col-xs-2 text-right">
+                             <span class="plusj">+ j</span>
+                         </div>
+                        <div class="col-xs-4">
+                            <input id="i21" class="form-control">
+                        </div>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-2">
+                            <span class="changeparam">z</span><span class="sub">22</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <input id="r22" class="form-control">
+                        </div>
+                         <div class="col-xs-2 text-right">
+                             <span class="plusj">+ j</span>
+                         </div>
+                        <div class="col-xs-4">
+                            <input id="i22" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="cardright" class="col-sm-4 col-xs-12">
+                    <div class="form-group form-inline">
+                        <label>TO: </label>
+                        <select name="toparameter" class="form-control">
+                            <option value="1">Impedance [z]</option>
+                            <option value="2">Admittance [y]</option>
+                            <option value="3">Hybrid [h]</option>
+                            <option value="4">Inverse Hybrid [g]</option>
+                            <option value="5">Transmission [T]</option>
+                            <option value="6">Inverse Transmission [t]</option>
+                        </select>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-12 text-center">
+                            <span class="real">TRANSFORMATION</span>
+                        </div>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-12 lam">
+                            <div class="col-xs-2">
+                                <span class="changetoparam">z</span><span class="sub">11</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <span id="label11">--</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-12 lam">
+                            <div class="col-xs-2">
+                                <span class="changetoparam">z</span><span class="sub">12</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <span id="label12">--</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-12 lam">
+                            <div class="col-xs-2">
+                                <span class="changetoparam">z</span><span class="sub">21</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <span id="label21">--</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="spanner">
+                        <div class="col-xs-12 lam">
+                            <div class="col-xs-2">
+                                <span class="changetoparam">z</span><span class="sub">22</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <span id="label22">--</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="upnotch" class="col-xs-push-4 col-xs-5">
+                    <div id="notifier"  class="alert alert-danger text-center hidden animated infinite rubberBand" role="alert">
+                        Sorry, your input is invalid!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav id="navbottom" class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid text-center">
+        <div>Developed by <span class="lemmeister">Lemmeister</span>. Copyright of 2016. All rights reserved.</div>
+    </div>
+</nav>
+
+</body>
+</html>
+
+
+
