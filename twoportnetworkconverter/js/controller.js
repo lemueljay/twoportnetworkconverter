@@ -78,6 +78,10 @@ $(document).ready(function() {
         var ans21 = parseString(result[2][0], result[2][1]);
         var ans22 = parseString(result[3][0], result[3][1]);
 
+        ans11 = math.eval(ans11);
+        ans12 = math.eval(ans12);
+        ans21 = math.eval(ans21);
+        ans22 = math.eval(ans22);
 
         $('#label11').text(ans11);
         $('#label12').text(ans12);
@@ -91,19 +95,19 @@ $(document).ready(function() {
         var denominator = '';
 
         if(str1[1] > 0) {
-            numerator = str1[0] + " + j" + str1[1];
+            numerator = str1[0] + " + " + str1[1] + "i";
         } else if (str1[1] == 0) {
             numerator = str1[0];
         } else if (str1[1] < 0) {
-            numerator = str1[0] + " - j" + (str1[1] * -1);
+            numerator = str1[0] + " - " + (str1[1] * -1 + "i");
         }
 
         if(str2[1] > 0) {
-            denominator = str2[0] + " + j" + str2[1];
+            denominator = str2[0] + " + " + str2[1] + "i";
         } else if (str2[1] == 0) {
             denominator = str2[0];
         } else if (str2[1] < 0) {
-            denominator = str2[0] + " - j" + (str2[1] * -1);
+            denominator = str2[0] + " - " + (str2[1] * -1 + "i");
         }
 
         if (denominator == '1') {
