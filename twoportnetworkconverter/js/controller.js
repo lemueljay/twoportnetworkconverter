@@ -163,23 +163,20 @@ $(document).ready(function() {
             if (fromID == 1 && toID == 1) {
                 var result = zToz(matreal, matimag);
 
-            } else if (fromID == 1 && toID == 1) {
+            } else if (fromID == 1 && toID == 2) {
                 var result = zToy(matreal, matimag);
 
-            } else if (fromID == 1 && toID == 2) {
+            } else if (fromID == 1 && toID == 3) {
                 var result = zToh(matreal, matimag);
 
-            } else if (fromID == 1 && toID == 3) {
+            } else if (fromID == 1 && toID == 4) {
                 var result = zTog(matreal, matimag);
 
-            } else if (fromID == 1 && toID == 4) {
+            } else if (fromID == 1 && toID == 5) {
                 var result = zToT(matreal, matimag);
 
-            } else if (fromID == 1 && toID == 5) {
-                var result = zTot(matreal, matimag);
-
             } else if (fromID == 1 && toID == 6) {
-                var result = yToz(matreal, matimag);
+                var result = zTot(matreal, matimag);
 
             } else if (fromID == 2 && toID == 1) {
                 var result = yToz(matreal, matimag);

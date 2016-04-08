@@ -11,9 +11,11 @@
         var a = multComplex(matReal[0], matImag[0], matReal[3], matImag[3]);
         var b = multComplex(matReal[1], matImag[1], matReal[2], matImag[2]);
         if(((a[0] - b[0])) == 0 && ((a[1] - b[1])) == 0) {
+            $('#determinant').text('0');
             alert('ERROR! DETERMINANT IS ZERO!');
         } else {
             console.log("Determinant: " + (a[0] - b[0]) + " " + (a[1] - b[1]) + "j");
+            $('#determinant').text(math.complex((a[0] - b[0]), (a[1] - b[1])));
             return [(a[0] - b[0]), (a[1] - b[1])];
         }
 

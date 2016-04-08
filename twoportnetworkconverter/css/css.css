@@ -133,3 +133,7 @@ a:hover {
     font-weight: lighter;
     text-decoration: none;
 }
+
+#determinant {
+    font-weight: bolder;
+}
